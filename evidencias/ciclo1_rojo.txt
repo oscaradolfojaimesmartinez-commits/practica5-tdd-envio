@@ -1,0 +1,21 @@
+test_envio (unittest.loader._FailedTest.test_envio) ... ERROR
+
+======================================================================
+ERROR: test_envio (unittest.loader._FailedTest.test_envio)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_envio
+Traceback (most recent call last):
+  File "/usr/lib64/python3.14/unittest/loader.py", line 433, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib64/python3.14/unittest/loader.py", line 374, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/oski2106/Documentos/Ciencias De la Computación/Modelado y Programacion/Practicas/Practica 04/python_TDD_envio/test_envio.py", line 2, in <module>
+    from envio import calcular_envio
+ModuleNotFoundError: No module named 'envio'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
