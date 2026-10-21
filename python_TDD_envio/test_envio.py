@@ -18,6 +18,9 @@ class TestCalcularEnvio(unittest.TestCase):
     
     def test_express_menor_a_5kg_cuesta_100(self):
         self.assertEqual(calcular_envio(3, "express"), 100)
+    
+    def test_express_mayor_a_5kg_cuesta_140(self):
+        self.assertEqual(calcular_envio(7, "express"), 140)
 
 
 if __name__ == "__main__":
