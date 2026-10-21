@@ -1,2 +1,2 @@
 def calcular_envio(peso, tipo):
-    return 0
+    return 50
