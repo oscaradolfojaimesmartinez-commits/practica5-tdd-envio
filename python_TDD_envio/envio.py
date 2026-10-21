@@ -1,6 +1,8 @@
 def calcular_envio(peso, tipo):
-    if tipo == "express":
-        return 100
     if peso > 5:
-        return 50 + 10 * (peso - 5)
-    return 50
+        costo = 50 + 10 * (peso - 5)
+    else:
+        costo = 50
+    if tipo == "express":
+        return costo * 2
+    return costo
