@@ -22,6 +22,14 @@ class TestCalcularEnvio(unittest.TestCase):
     def test_express_mayor_a_5kg_cuesta_140(self):
         self.assertEqual(calcular_envio(7, "express"), 140)
 
+    def test_peso_cero_lanza_error(self):
+        with self.assertRaises(ValueError):
+            calcular_envio(0, "estandar")
+
+    def test_peso_negativo_lanza_error(self):
+        with self.assertRaises(ValueError):
+            calcular_envio(-2, "express")
+
 
 if __name__ == "__main__":
     unittest.main()
