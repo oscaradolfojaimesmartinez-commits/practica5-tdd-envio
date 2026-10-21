@@ -1,0 +1,23 @@
+test_estandar_6kg_cuesta_60 (test_envio.TestCalcularEnvio.test_estandar_6kg_cuesta_60) ... ok
+test_estandar_7kg_cuesta_70 (test_envio.TestCalcularEnvio.test_estandar_7kg_cuesta_70) ... ok
+test_estandar_exactamente_5kg_cuesta_50 (test_envio.TestCalcularEnvio.test_estandar_exactamente_5kg_cuesta_50) ... ok
+test_estandar_menor_a_5kg_cuesta_50 (test_envio.TestCalcularEnvio.test_estandar_menor_a_5kg_cuesta_50) ... ok
+test_express_mayor_a_5kg_cuesta_140 (test_envio.TestCalcularEnvio.test_express_mayor_a_5kg_cuesta_140) ... ok
+test_express_menor_a_5kg_cuesta_100 (test_envio.TestCalcularEnvio.test_express_menor_a_5kg_cuesta_100) ... ok
+test_peso_cero_lanza_error (test_envio.TestCalcularEnvio.test_peso_cero_lanza_error) ... ok
+test_peso_negativo_lanza_error (test_envio.TestCalcularEnvio.test_peso_negativo_lanza_error) ... ok
+test_tipo_invalido_lanza_error (test_envio.TestCalcularEnvio.test_tipo_invalido_lanza_error) ... FAIL
+
+======================================================================
+FAIL: test_tipo_invalido_lanza_error (test_envio.TestCalcularEnvio.test_tipo_invalido_lanza_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/oski2106/Documentos/Ciencias De la Computación/Modelado y Programacion/Practicas/Practica 04/python_TDD_envio/test_envio.py", line 34, in test_tipo_invalido_lanza_error
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=1)

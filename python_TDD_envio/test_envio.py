@@ -29,6 +29,10 @@ class TestCalcularEnvio(unittest.TestCase):
     def test_peso_negativo_lanza_error(self):
         with self.assertRaises(ValueError):
             calcular_envio(-2, "express")
+    
+    def test_tipo_invalido_lanza_error(self):
+        with self.assertRaises(ValueError):
+            calcular_envio(3, "urgente")
 
 
 if __name__ == "__main__":
