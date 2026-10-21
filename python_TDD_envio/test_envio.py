@@ -9,6 +9,12 @@ class TestCalcularEnvio(unittest.TestCase):
 
     def test_estandar_6kg_cuesta_60(self):
         self.assertEqual(calcular_envio(6, "estandar"), 60)
+    
+    def test_estandar_exactamente_5kg_cuesta_50(self):
+        self.assertEqual(calcular_envio(5, "estandar"), 50)
+
+    def test_estandar_7kg_cuesta_70(self):
+        self.assertEqual(calcular_envio(7, "estandar"), 70)
 
 
 if __name__ == "__main__":

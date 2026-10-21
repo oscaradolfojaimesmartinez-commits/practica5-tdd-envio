@@ -1,0 +1,9 @@
+test_estandar_6kg_cuesta_60 (test_envio.TestCalcularEnvio.test_estandar_6kg_cuesta_60) ... ok
+test_estandar_7kg_cuesta_70 (test_envio.TestCalcularEnvio.test_estandar_7kg_cuesta_70) ... ok
+test_estandar_exactamente_5kg_cuesta_50 (test_envio.TestCalcularEnvio.test_estandar_exactamente_5kg_cuesta_50) ... ok
+test_estandar_menor_a_5kg_cuesta_50 (test_envio.TestCalcularEnvio.test_estandar_menor_a_5kg_cuesta_50) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
