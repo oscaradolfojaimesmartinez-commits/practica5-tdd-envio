@@ -1,4 +1,4 @@
-TIPOS = {"estandar", "express"}
+TIPOS = {"estandar":1, "express":2}
 PESO_LIMITE = 5 
 COSTO_ESTANDAR = 50
 COSTO_KILAD = 10
@@ -11,9 +11,7 @@ def calcular_envio(peso, tipo):
         raise ValueError("Tipo de envío inválido")
 
     calcular_peso_adicional = COSTO_KILAD * max(0, peso - PESO_LIMITE) 
-    costo = COSTO_ESTANDAR + calcular_peso_adicional
+    costo = (COSTO_ESTANDAR + calcular_peso_adicional) * TIPOS[tipo]
 
-    if tipo == "express":
-        return costo * 2
         
     return costo
